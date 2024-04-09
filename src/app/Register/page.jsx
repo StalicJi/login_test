@@ -55,6 +55,7 @@ export default function Register() {
       if (response.status === 201) {
         console.log("註冊成功");
         form.reset();
+        window.location.href = "/";
       } else {
         console.error("註冊失敗");
       }
